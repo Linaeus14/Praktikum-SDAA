@@ -11,14 +11,14 @@ float luas_segitiga(float alas, float tinggi)
 }
 
 //prosedur
-void input(string prompt, float input)
+void input(string prompt, float &input)
 {
     cout << prompt;
     cin >> input;
 }
 
 //overloading prosedur
-void input(string prompt, int input)
+void input(string prompt, int &input)
 {
     cout << prompt;
     cin >> input;
@@ -29,7 +29,7 @@ int main()
     float alas;
     float tinggi;
     input("masukkan alas: ", alas);
-    input("masukkan tinggi", tinggi);
+    input("masukkan tinggi: ", tinggi);
     cout << luas_segitiga(alas, tinggi) << endl;
 
     return 0;

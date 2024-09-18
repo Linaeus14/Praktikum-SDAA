@@ -9,7 +9,6 @@ int main()
     cout << endl;
 
     int array[angka], *n; // deklarasi array langung mengambil memori di RAM sejumlah panjang array(angka)
-    int **p;
 
     // penggunaan & sebelum array untuk mengambil alamat (Address-Of Operator)
     n = &array[0]; // mengambil alamat array pertama(0) untuk anchor

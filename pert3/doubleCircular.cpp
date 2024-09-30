@@ -25,7 +25,7 @@ struct Data
     string position;
 };
 
-// Node single linked list, hanya memiliki data dan pointer node next;
+// Node double circular linked list, hanya memiliki data dan pointer node next;
 struct Node
 {
     Node *prev;
@@ -50,13 +50,13 @@ void Read(Node *head, int jumlahRoster);
 void Update(Node *&head);
 void Delete(Node *&head, Node *&tail, int &jumlahRoster, string menu);
 
-// Prosedur Manipulasi Single Linked List
+// Prosedur Manipulasi double circular Linked List
 void CF(Node *&head, Node *&tail, int &jumlahRoster); // Tambah Awal
 void CL(Node *&head, Node *&tail, int &jumlahRoster); // Tambah Akhir
 void CP(Node *&head, Node *&tail, int &jumlahRoster); // Tambah Urutan Tertentu
 void DF(Node *&head, Node *&tail, int &jumlahRoster); // Hapus Awal
-void DL(Node *&head, Node *&tail, int &jumlahRoster); // Hapus urutan Tertentu
-void DP(Node *&head, Node *&tail, int &jumlahRoster); // Hapus Akhir
+void DL(Node *&head, Node *&tail, int &jumlahRoster); // Hapus Akhir
+void DP(Node *&head, Node *&tail, int &jumlahRoster); // Hapus Urutan Tertentu
 
 // Input dan Error handling untuk input
 void inputPilihan(string namaPilihan, const string array[], int panjang, string &data);

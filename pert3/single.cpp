@@ -54,8 +54,8 @@ void CF(Node *&head, int &jumlahRoster); // Tambah Awal
 void CL(Node *&head, int &jumlahRoster); // Tambah Akhir
 void CP(Node *&head, int &jumlahRoster); // Tambah Urutan Tertentu
 void DF(Node *&head, int &jumlahRoster); // Hapus Awal
-void DL(Node *&head, int &jumlahRoster); // Hapus urutan Tertentu
-void DP(Node *&head, int &jumlahRoster); // Hapus Akhir
+void DL(Node *&head, int &jumlahRoster); // Hapus akhir
+void DP(Node *&head, int &jumlahRoster); // Hapus urutan Tertentu
 
 // Input dan Error handling untuk input
 void inputPilihan(string namaPilihan, const string array[], int panjang, string &data);
@@ -205,7 +205,7 @@ void CP(Node *&head, int &jumlahRoster)
         Node *temp = head;                 // Mulai dari node head sebagai node sementara
 
         // Jika urutan bukan 1, cari posisi yang sesuai dalam list
-        for (int x = 0; x < input-2; x++) // Loop untuk mencapai node sebelum posisi yang diminta
+        for (int x = 0; x < input - 2; x++) // Loop untuk mencapai node sebelum posisi yang diminta
         {
             temp = temp->next; // Pindah ke node berikutnya
         }

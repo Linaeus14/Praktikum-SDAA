@@ -21,7 +21,7 @@ int main()
     Node *head = nullptr;
     Node *tail = nullptr;
 
-    string menuUtama = "\n\n == Data Roster Karakter ==\n 1. Tambah lantai\n 2. Kurangi lantai\n 3. Keluar\n Masukan pilihan : ";
+    string menuUtama = "\n\n == Ilustrasi Stack Lantai ==\n 1. Tambah lantai\n 2. Kurangi lantai\n 3. Keluar\n Masukan pilihan : ";
     while (loop == true)
     {
         if (tail != nullptr)
@@ -61,6 +61,12 @@ int main()
 
 void addFirst(Node *&head, Node *&tail, int &jumlah)
 {
+    if (jumlah > 5)
+    {
+        cout << "\nStack Overflow!\n";
+        return;
+    }
+
     Node *nodeBaru = new Node;
     nodeBaru->lantai = jumlah + 1;
 
@@ -85,6 +91,12 @@ void addFirst(Node *&head, Node *&tail, int &jumlah)
 
 void deleteFirst(Node *&head, Node *&tail, int &jumlah)
 {
+    if (jumlah == 0)
+    {
+        cout << "\nStack Underflow!\n";
+        return;
+    }
+
     Node *cur = head;
     if (jumlah == 1)
     {

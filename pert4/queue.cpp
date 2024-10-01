@@ -38,7 +38,7 @@ int main()
     Node *head = nullptr;
     Node *tail = nullptr;
 
-    string menuUtama = "\n == Data Roster Karakter ==\n 1. Submit Tiket\n 2. Cek Tiket\n 3. Keluar\n Masukan pilihan : ";
+    string menuUtama = "\n == Managemen Queue Tiket ==\n 1. Submit Tiket\n 2. Cek Tiket\n 3. Keluar\n Masukan pilihan : ";
     while (loop == true)
     {
         cout << menuUtama;

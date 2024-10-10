@@ -79,7 +79,7 @@ void shellSort(Node *&head, int arr[], int counter, int &callstack, bool descend
     // Loop gap
     for (int gap = counter / 2; gap > 0; gap /= 2)
     {
-        // loop sorting yang berheser ke kanan
+        // loop sorting yang bergeser ke kanan
         for (int i = gap; i < counter; i++)
         {
             int temp = arr[i];

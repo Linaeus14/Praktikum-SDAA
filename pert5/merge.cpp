@@ -135,6 +135,15 @@ Node *merge(Node *left, Node *right, bool descending)
 bool compare(Node *a, Node *b, bool descending)
 {
     return descending ? a->angka > b->angka : a->angka <= b->angka;
+
+    // Fungsinya sama dengan ini, diatas merupakan shorthand / ternary
+    // if (descending)
+    // {
+    //     return a->angka > b->angka;
+    // } else
+    // {
+    //     return a->angka <= b->angka;
+    // }
 }
 
 void printList(Node *head)
